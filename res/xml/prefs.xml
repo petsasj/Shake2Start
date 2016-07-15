@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:threefiftyprefs="http://schemas.android.com/apk/res/com.petsasj.HyperDroidParts"
+    android:title="Shake2Start" >
+
+    <PreferenceCategory android:title="Tools" >
+        <PreferenceScreen android:title="List" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.petsasj.HyperDroidParts.ShakeToStart.ListInstalledActivitiesActivity"
+                android:targetPackage="com.petsasj.HyperDroidParts.ShakeToStart" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="key12"
+            android:title="Main" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.petsasj.HyperDroidParts.ShakeToStart.ShakerActivity"
+                android:targetPackage="com.petsasj.HyperDroidParts.ShakeToStart" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>
